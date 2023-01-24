@@ -1,0 +1,11 @@
+Modelo de Negócio  
+
+Definição
+O G_Desp é um sistema que permite a gestão das finanças pessoais por meio de uma plataforma web. Este sistema poderá ser acessado por um computador desktop e por dispositivos móveis e tablets. 
+ 
+Escopo
+A problemática que o sistema visa apoiar refere-se ao fluxo de caixa oriundo da atividade de gestão de finanças pessoais executada pelas pessoas que desejam ter o controle de suas entradas e saídas mensais.
+
+O sistema possui a figura do usuário, o mesmo precisará criar uma conta para utilizar o sistema, tal conta deverá possuir um nome único de usuário na plataforma, na posse de seu login, poderá acessar o sistema e executar ações de cadastrar suas categorias, e posteriormente relacionar suas entradas e saídas a estas categorias constituindo seu fluxo de caixa. Mediante a inserção dos dados, o usuário não poderá cadastrar entradas e saídas na ausência de categorias, e não poderá deletar categorias com entradas e saídas relacionadas, a visão dos dados se dará em intervalo de tempo mensal, ao termino deste período o usuário deverá extrair um relatório para visualizar demais intervalos de tempo. 
+
+

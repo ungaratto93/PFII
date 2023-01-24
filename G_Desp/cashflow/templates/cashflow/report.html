@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+
+<h2>Relatório</h2>
+
+<p>Gere um relatório filtrando pelo intervalo de meses desejado</p>
+
+<form>
+	<select>
+    <option>Selecionar</option>
+    <option value="3">3 meses</option>
+    <option value="6">6 meses</option>
+    <option value="9">9 meses</option>
+    <option value="12">12 meses</option>
+  </select>
+	<input class="btn btn-primary" type="submit" name="filter" value="Filtrar">
+</form>
+
+<canvas id="bar-chart-grouped" width="100" height="25"></canvas>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Mês</th>
+      <th>Ano</th>
+      <th>Total Entradas</th>
+      <th>Total Saídas</th>
+      <th>Diferença</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for data in dataset %}
+      <tr>
+        <td>{{ data.month }}</td>
+        <td>{{ data.year }}</td>
+        <td>{{ data.inflow_sum_values }}</td>
+        <td>{{ data.outflow_sum_values }}</td>
+        <td>{{ data.inflow_outflow_dif_values }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<span hidden="true" id="data_in" type="number">{{ data_in }}</span>
+<span hidden="true" id="data_out" type="number">{{ data_out }}</span>
+<span hidden="true" id="diff" type="number">{{ diff }}</span>
+
+
+{% if dataset.has_other_pages %}
+  <ul class="pagination">
+    {% if dataset.has_previous %}
+      <li><a href="?page={{ dataset.previous_page_number }}">&laquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&laquo;</span></li>
+    {% endif %}
+    {% for i in dataset.paginator.page_range %}
+      {% if dataset.number == i %}
+        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+      {% else %}
+        <li><a href="?page={{ i }}">{{ i }}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if dataset.has_next %}
+      <li><a href="?page={{ dataset.next_page_number }}">&raquo;</a></li>
+    {% else %}
+      <li class="disabled"><span>&raquo;</span></li>
+    {% endif %}
+  </ul>
+{% endif %}
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script type="text/javascript">
+
+
+    data_in = document.getElementById("data_in").innerText;
+    data_out = document.getElementById("data_out").innerText;
+    diff = document.getElementById("diff").innerText;
+
+    data_in = JSON.parse(data_in)
+    data_out = JSON.parse(data_out)
+    diff = JSON.parse(diff)
+
+    console.log(data_in)
+    console.log(data_in['data_in']);
+
+    console.log(data_out)
+    console.log(data_out['data_out']);
+
+new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+
+    data: {
+      labels: {{ labels }},
+      datasets: [
+        {
+          label: "Entradas",
+          backgroundColor: "#32ab44",
+          data: data_in['data_in']
+        }, {
+          label: "Saídas",
+          backgroundColor: "#b52b1b",
+          data: data_out['data_out']
+        }
+, {
+          label: "Diferença",
+          backgroundColor: "#117ad6",
+          data: diff['diff']
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Gráfico sobre os dados do seu fluxo de caixa'
+      }
+    }
+});
+
+
+</script>
+
+{% endblock %}

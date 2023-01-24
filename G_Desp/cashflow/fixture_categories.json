@@ -1,0 +1,90 @@
+[
+    {
+      "model": "cashflow.category",
+      "pk": 1,
+      "fields": {
+        "code": "1",
+        "name": "Credit card",
+        "description": "My category",
+        "registered_at": "2020-01-01T13:00:00+00:00",
+        "registered_by": "eduardo"
+      }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 2,
+        "fields": {
+          "code": "2",
+          "name": "Rent",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 3,
+        "fields": {
+          "code": "3",
+          "name": "Supermarket",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 4,
+        "fields": {
+          "code": "4",
+          "name": "Education",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 5,
+        "fields": {
+          "code": "5",
+          "name": "Broadband internet plan",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 6,
+        "fields": {
+          "code": "6",
+          "name": "Home energy",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.category",
+        "pk": 7,
+        "fields": {
+          "code": "7",
+          "name": "Mobile internet plan",
+          "description": "My category",
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+      "model": "cashflow.category",
+      "pk": 8,
+      "fields": {
+        "code": "8",
+        "name": "Salary",
+        "description": "My category",
+        "registered_at": "2020-01-01T13:00:00+00:00",
+        "registered_by": "eduardo"
+      }
+    }
+]

@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if no_categories %}
+  <div class="alert alert-warning" role="alert">
+    <p><strong></strong>Você precisa criar ao menos uma categoria.</p>
+  </div>
+{% else %}
+<div class="container-fluid" style="text-align:center;">
+
+  <div class="card">
+    <div class="card-header">
+
+      <h2>Criar Saída</h2>
+    </div>
+    <div class="card-body">
+      <form action="{% url 'cashflow:outflow_save' %}" method="post">
+        {% csrf_token %}
+
+          <div class="form-group row">
+            <label 
+              for="name"
+              class="col-sm-2 col-form-label">
+              Nome:
+            </label>
+            <div class="col-sm-4">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                value=""
+                required="true">
+            </div>
+
+            <label 
+              for="categories">
+              Escolha uma categoria:
+            </label>
+            <div 
+              class="col-sm-3">
+              <select 
+                name="categories"
+                class="form-control" 
+                id="categories"
+                required="true">
+                <option value=""></option>
+                {% for category in categories %}
+                  <option value="{{ category.id }}">{{category}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label 
+              for="reg_date"
+              class="col-sm-2 col-form-label">
+              Data:
+            </label>
+            <div 
+              class="col-sm-4">
+              <input 
+                type="date" 
+                class="form-control"
+                name="reg_date"
+                id="reg_date"
+                value=""
+                required="true">
+            </div>
+
+            <label 
+              for="value"
+              class="col-sm-2 col-form-label">
+              Valor $:
+            </label>
+            <div
+              class="col-sm-4">
+              <input 
+                type="number"
+                class="form-control"
+                step="any"
+                name="value"
+                id="value"
+                value="0.00"
+                required="true">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label 
+              for="payment_code"
+              class="col-sm-2 col-form-label">
+              Código de pagamento:
+            </label>
+            <div class="col-sm-4">
+              <input 
+                type="text"
+                class="form-control"
+                name="payment_code"
+                id="payment_code"
+                value=""
+                required="false">
+            </div>
+
+            <label 
+              for="billet_code"
+              class="col-sm-2 col-form-label">
+              Código de cobrança:
+            </label>
+            <div class="col-sm-4">
+              <input 
+                type="text"
+                class="form-control"
+                name="billet_code"
+                id="billet_code"
+                value=""
+                required="false">
+            </div>
+          </div>
+
+        <input 
+          class="btn btn-success"
+          style="text-align:center;"
+          type="submit"
+          value="Salvar">
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  <div class="card">
+      <div class="card-header">
+        Create outflow
+      </div>
+      <div class="card-body">
+
+        <form action="{% url 'cashflow:outflow_save' %}" method="post">
+          {% csrf_token %}
+          <label>Name:</label>
+          <input type="text" name="name" id="name" value="" required="true">
+
+          <label for="categories">Choose a category:</label>
+
+          <select name="categories" id="categories" required="true">
+            <option value=""></option>
+            {% for category in categories %}
+              <option value="{{ category.id }}">{{category}}</option>
+            {% endfor %}
+          </select>
+
+          <label>Date:</label>
+          <input type="date" name="reg_date" id="reg_date" value=""  required="true">
+
+          <label>Value $:</label>
+          <input type="number" step="any" name="value" id="value" value="0.00"  required="true">
+
+          <input class="btn btn-info" type="submit" value="Save">
+        </form>
+      </div>
+  </div>-->
+{% endif %}
+{% endblock %}

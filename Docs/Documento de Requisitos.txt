@@ -1,0 +1,135 @@
+
+
+
+Funcional
+
+
+[RF001] Tela inicial
+Prioridade: Media 
+Definição: O sistema deve apresentar uma tela inicial com informações básicas de apresentação do mesmo.
+
+
+[RF002] Conta de usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário criar sua conta e administra-la.
+
+
+[RF003] Conta de usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário alterar sua senha.
+
+
+[RF004] Conta de usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário resetar sua senha.
+
+
+[RF005] Autenticação
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário o acesso mediante autenticação de seu nome de usuário e senha.
+
+
+[RF006] Autenticação
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário se desconecte do sistema.
+
+
+[RF007] Entradas financeiras
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário ter ações sobre suas entradas.
+
+
+[RF008] Saídas financeiras
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário ter ações sobre suas saídas.
+
+
+[RF009] Visão geral dos dados financeiros 
+Prioridade: Alta 
+Definição: O sistema deve apresentar um painel apresentando a visão geral com gráficos baseados nos dados financeiros agrupados pelas categorias definidas pelo usuário.
+
+
+[RF010] Visão geral dos dados financeiros 
+Prioridade: Alta 
+Definição: O painel deve apresentar o saldo atual no mês corrente e agrupar os valores por categoria.
+
+
+[RF011] Conta do usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário administrar sua conta, podendo editar seu nome e endereço de email.
+
+
+[RF012] Conta do usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário administrar sua conta, podendo editar seu nome e endereço de email.
+
+
+[RF013] Conta do usuário
+Prioridade: Alta 
+Definição: O sistema deve permitir ao usuário deletar sua conta e todos seus dados na plataforma.
+
+
+[RF014] Administração do sistema
+Prioridade: Alta 
+Definição: O sistema nao deve permitir acesso a rota de administrador fornecida pelo framework.
+
+
+[RF014] Administração das categorias
+Prioridade: Alta 
+Definição: O usuário pode criar, editar, listar e excluir suas categorias.
+
+
+[RF015] Administração das categorias
+Prioridade: Alta 
+Definição: O usuário nao pode excluir suas categorias que estejam com relacionamento com entradas e saidas.
+
+
+[RF016] Administração das categorias
+Prioridade: Alta 
+Definição: O usuário pode excluir suas categorias que estejam sen relacionamento com entradas e saidas.
+
+
+[RF017] Administração das categorias
+Prioridade: Alta 
+Definição: O usuário nao pode acessar e manipular as categorias dos outros usuarios.
+
+
+[RF018] Administração das entradas
+Prioridade: Alta 
+Definição: O usuário pode criar, editar, listar e excluir suas entradas.
+
+
+[RF019] Administração das entradas
+Prioridade: Alta 
+Definição: O usuário nao pode acessar e manipular as entradas dos outros usuarios.
+
+
+[RF020] Administração das saídas
+Prioridade: Alta 
+Definição: O usuário pode criar, editar, listar e excluir suas saídas.
+
+
+[RF021] Administração das saídas
+Prioridade: Alta 
+Definição: O usuário nao pode acessar e manipular as saídas dos outros usuarios.
+
+[RF022] Conta do usuário
+Prioridade: Alta
+Definição: O usuário ao criar sua conta deve informar uma senha e confirma-la
+
+[RF023] Conta do usuário
+Prioridade: Alta
+Definição: O usuário deve ser capaz de redefinir sua senha mediante link enviado por email
+
+Nao funcional
+
+
+[RNF001] Interface do usuário
+Prioridade: Media
+Definição: As telas do sistema devem ser responsivas
+
+
+[RNF001] Segurança
+Prioridade: Media
+Definição: O sistema nao devem permitir o acesso a usuários nao autenticados a rotas que expoe dados e requerem um usuário
+

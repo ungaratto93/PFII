@@ -1,0 +1,354 @@
+[
+    {
+        "model": "cashflow.inflow",
+        "pk": 1,
+        "fields": {
+          "name": "Salary",
+          "value": 4000.00,
+          "category": 8,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 1,
+        "fields": {
+          "name": "Credit card",
+          "value": 1850.00,
+          "category": 1,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 2,
+        "fields": {
+          "name": "Rent",
+          "value": 850.00,
+          "category": 2,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 3,
+        "fields": {
+          "name": "Supermarket",
+          "value": 700.00,
+          "category": 3,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 4,
+        "fields": {
+          "name": "Education",
+          "value": 200.00,
+          "category": 4,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 5,
+        "fields": {
+          "name": "Broadband internet plan",
+          "value": 155.00,
+          "category": 5,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 6,
+        "fields": {
+          "name": "Home energy",
+          "value": 130.00,
+          "category": 6,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 7,
+        "fields": {
+          "name": "Mobile internet plan",
+          "value": 60.00,
+          "category": 8,
+          "registered_at": "2020-01-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.inflow",
+        "pk": 2,
+        "fields": {
+          "name": "Salary",
+          "value": 4000.00,
+          "category": 8,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 8,
+        "fields": {
+          "name": "Credit card",
+          "value": 1850.00,
+          "category": 1,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 9,
+        "fields": {
+          "name": "Rent",
+          "value": 850.00,
+          "category": 2,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 10,
+        "fields": {
+          "name": "Supermarket",
+          "value": 700.00,
+          "category": 3,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 11,
+        "fields": {
+          "name": "Education",
+          "value": 200.00,
+          "category": 4,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 12,
+        "fields": {
+          "name": "Broadband internet plan",
+          "value": 155.00,
+          "category": 5,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 13,
+        "fields": {
+          "name": "Home energy",
+          "value": 130.00,
+          "category": 6,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 14,
+        "fields": {
+          "name": "Mobile internet plan",
+          "value": 60.00,
+          "category": 8,
+          "registered_at": "2020-02-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.inflow",
+        "pk": 3,
+        "fields": {
+          "name": "Salary",
+          "value": 4000.00,
+          "category": 8,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 15,
+        "fields": {
+          "name": "Credit card",
+          "value": 1850.00,
+          "category": 1,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 16,
+        "fields": {
+          "name": "Rent",
+          "value": 850.00,
+          "category": 2,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 17,
+        "fields": {
+          "name": "Supermarket",
+          "value": 700.00,
+          "category": 3,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 18,
+        "fields": {
+          "name": "Education",
+          "value": 200.00,
+          "category": 4,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 19,
+        "fields": {
+          "name": "Broadband internet plan",
+          "value": 155.00,
+          "category": 5,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 20,
+        "fields": {
+          "name": "Home energy",
+          "value": 130.00,
+          "category": 6,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 21,
+        "fields": {
+          "name": "Mobile internet plan",
+          "value": 60.00,
+          "category": 8,
+          "registered_at": "2020-03-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+   {
+        "model": "cashflow.inflow",
+        "pk": 3,
+        "fields": {
+          "name": "Salary",
+          "value": 4000.00,
+          "category": 8,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 15,
+        "fields": {
+          "name": "Credit card",
+          "value": 1850.00,
+          "category": 1,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 16,
+        "fields": {
+          "name": "Rent",
+          "value": 850.00,
+          "category": 2,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 17,
+        "fields": {
+          "name": "Supermarket",
+          "value": 700.00,
+          "category": 3,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 18,
+        "fields": {
+          "name": "Education",
+          "value": 200.00,
+          "category": 4,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 19,
+        "fields": {
+          "name": "Broadband internet plan",
+          "value": 155.00,
+          "category": 5,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 20,
+        "fields": {
+          "name": "Home energy",
+          "value": 130.00,
+          "category": 6,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    },
+    {
+        "model": "cashflow.outflow",
+        "pk": 21,
+        "fields": {
+          "name": "Mobile internet plan",
+          "value": 60.00,
+          "category": 8,
+          "registered_at": "2020-04-01T13:00:00+00:00",
+          "registered_by": "eduardo"
+        }
+    }
+  ]

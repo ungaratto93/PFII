@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>cashflow.models.Inflow</OriginalElement>
+  <nodes>
+    <node x="42.62500000000006" y="1067.0">django.db.models.base.Model</node>
+    <node x="284.12500000000006" y="2470.0">cashflow.models.Inflow</node>
+    <node x="396.20833333333337" y="0.0">typing.Hashable</node>
+    <node x="0.0" y="104.0">django.db.models.base.ModelBase</node>
+    <node x="300.0" y="291.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cashflow.models.Inflow" target="django.db.models.base.Model">
+      <point x="0.0" y="-93.5" />
+      <point x="0.0" y="676.5" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="django.db.models.base.ModelBase">
+      <point x="-230.33333333333337" y="-676.5" />
+      <point x="157.79166666666669" y="1042.0" />
+      <point x="140.0" y="1042.0" />
+      <point x="0.0" y="456.5" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="object">
+      <point x="0.0" y="-676.5" />
+      <point x="388.12500000000006" y="1042.0" />
+      <point x="414.0" y="1042.0" />
+      <point x="0.0" y="269.5" />
+    </edge>
+    <edge source="object" target="typing.Hashable">
+      <point x="0.0" y="-269.5" />
+      <point x="414.0" y="79.0" />
+      <point x="434.20833333333337" y="79.0" />
+      <point x="-38.0" y="27.0" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="typing.Hashable">
+      <point x="230.33333333333337" y="-676.5" />
+      <point x="618.4583333333335" y="1042.0" />
+      <point x="538.5" y="1042.0" />
+      <point x="538.5" y="79.0" />
+      <point x="510.20833333333337" y="79.0" />
+      <point x="38.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="223.0" y="2407.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

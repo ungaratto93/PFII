@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>django.contrib.auth.models.User</OriginalElement>
+  <nodes>
+    <node x="206.68518518518508" y="2686.0">django.contrib.auth.models.AbstractUser</node>
+    <node x="58.49999999999994" y="693.0">django.db.models.base.Model</node>
+    <node x="250.18518518518508" y="3166.0">django.contrib.auth.models.User</node>
+    <node x="0.0" y="2096.0">django.contrib.auth.base_user.AbstractBaseUser</node>
+    <node x="420.0" y="2239.0">django.contrib.auth.models.PermissionsMixin</node>
+    <node x="412.08333333333337" y="0.0">typing.Hashable</node>
+    <node x="25.583333333333314" y="192.0">django.db.models.base.ModelBase</node>
+    <node x="325.5833333333333" y="104.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="django.contrib.auth.models.User" target="django.contrib.auth.models.AbstractUser">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="215.0" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="django.db.models.base.ModelBase">
+      <point x="-230.33333333333331" y="-676.5" />
+      <point x="173.66666666666663" y="668.0" />
+      <point x="165.58333333333331" y="668.0" />
+      <point x="0.0" y="181.5" />
+    </edge>
+    <edge source="django.contrib.auth.models.AbstractUser" target="django.contrib.auth.base_user.AbstractBaseUser">
+      <point x="-91.74999999999994" y="-215.0" />
+      <point x="298.4351851851851" y="2661.0" />
+      <point x="200.0" y="2661.0" />
+      <point x="0.0" y="270.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.AbstractUser" target="django.contrib.auth.models.PermissionsMixin">
+      <point x="91.75000000000006" y="-215.0" />
+      <point x="481.9351851851851" y="2661.0" />
+      <point x="608.0" y="2661.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="object">
+      <point x="5.6843418860808015E-14" y="-676.5" />
+      <point x="404.0" y="668.0" />
+      <point x="439.5833333333333" y="668.0" />
+      <point x="0.0" y="269.5" />
+    </edge>
+    <edge source="object" target="typing.Hashable">
+      <point x="0.0" y="-269.5" />
+      <point x="439.5833333333333" y="79.0" />
+      <point x="450.08333333333337" y="79.0" />
+      <point x="-38.0" y="27.0" />
+    </edge>
+    <edge source="django.db.models.base.Model" target="typing.Hashable">
+      <point x="230.33333333333343" y="-676.5" />
+      <point x="634.3333333333334" y="668.0" />
+      <point x="564.0833333333333" y="668.0" />
+      <point x="564.0833333333333" y="79.0" />
+      <point x="526.0833333333334" y="79.0" />
+      <point x="38.0" y="27.0" />
+    </edge>
+    <edge source="django.contrib.auth.models.PermissionsMixin" target="django.db.models.base.Model">
+      <point x="0.0" y="-127.0" />
+      <point x="608.0" y="2071.0" />
+      <point x="576.75" y="2071.0" />
+      <point x="172.75000000000006" y="676.5" />
+    </edge>
+    <edge source="django.contrib.auth.base_user.AbstractBaseUser" target="django.db.models.base.Model">
+      <point x="0.0" y="-270.0" />
+      <point x="200.0" y="2071.0" />
+      <point x="231.24999999999994" y="2071.0" />
+      <point x="-172.75" y="676.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="398.0" y="258.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+</Diagram>
+

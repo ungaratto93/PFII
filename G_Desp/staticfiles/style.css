@@ -1,0 +1,13 @@
+li a {
+    color: green;
+}
+
+body {
+    background-color: #fff;
+}
+
+/*
+body {
+    background: white url("images/background.gif") no-repeat;
+}
+*/

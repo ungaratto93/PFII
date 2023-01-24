@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container-fluid container-home">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Minhas categorias</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+          <a class="btn btn-primary" href="{% url 'cashflow:category_create' %}" role="button">Criar categoria</a>
+      </div>
+    </div>
+  </div>
+    {% for message in messages %}
+        {% if message %}
+            <div class="alert alert-info" role="alert">
+                {{ message }}
+            </div>
+        {% endif %}
+    {% endfor %}
+    <div class="row">
+      <div class="col-md-2">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Relacionamentos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Entradas</td>
+              <td>{{ categories_inflow }}</td>
+            </tr>
+            <tr>
+              <td>Saídas</td>
+              <td>{{ categories_outflow }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Registrado em</th>
+          <th scope="col">Registrado por</th>
+          <!--<th scope="col">Inflow relations</th>
+          <th scope="col">Outflow relations</th>-->
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+    {% if categories %}
+        
+        {% for category in categories %}
+        <tr>
+            <td><a href="{% url 'cashflow:category_detail' category.id %}">{{ category.code }}</a>
+            </td>
+            <td>{{ category.name }}</td>
+            <td>{{ category.registered_at|date:"d/m/Y" }}</td>
+            <td>{{ category.registered_by }}</td>
+            <!--<td>{{ categories_inflow }}</td>
+            <td>{{ categories_outflow }}</td>-->
+            <td>
+              <button type="button" class="btn btn-outline">
+                <a href="{% url 'cashflow:category_detail' category.id %}">
+                  <i class="glyphicon glyphicon-eye-open"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-outline">
+                <a href="{% url 'cashflow:category_edit' category.id %}">
+                  <i class="glyphicon glyphicon-edit"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-outline">
+                <a href="{% url 'cashflow:category_delete' category.id %}">
+                  <i class="glyphicon glyphicon-trash"></i>
+                </a>
+              </button>
+            </td>
+        </tr>
+        {% endfor %}
+        
+    {% else %}
+        <td>Categorias não encontradas.</td>
+    {% endif %}
+      </tbody>
+    </table>
+{% endblock %}
